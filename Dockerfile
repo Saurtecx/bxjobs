@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image
-FROM python:3.8-slim
+FROM python:3.11.3-slim
 
 # Set the working directory to /app
 WORKDIR /app
@@ -17,4 +17,4 @@ EXPOSE 80
 ENV NAME World
 
 # Run app.py when the container launches
-CMD ["python", "flask/app.py"]
+CMD ["python", "app.py"]
